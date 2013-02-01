@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Statuses.create([{ name: 'Logged In manually' },
+                 { name: 'Logged In automatically' },
+                 { name: 'Logged Out manually' },
+                 { name: 'Logged Out automatically' },
+                 { name: 'Session Expired' }
+                ])

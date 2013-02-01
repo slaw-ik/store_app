@@ -1,4 +1,5 @@
 = link_to "Home", root_path, :class => 'brand'
+= session["warden.user.user.session"]["last_request_at"] unless session["warden.user.user.session"].blank?
 %ul.nav
   - if user_signed_in?
     %li

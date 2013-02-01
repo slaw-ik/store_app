@@ -14,6 +14,7 @@ class ApplicationController < ActionController::Base
     token = Devise.friendly_token
     current_user.update_attribute :current_sign_in_token, token
     session[:sign_in_token] = token
+    Activity.leave(current_user.id, 1, Time.now)
   end
 
 end
