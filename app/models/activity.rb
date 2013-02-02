@@ -1,7 +1,7 @@
 class Activity < ActiveRecord::Base
   attr_accessible :status_id, :user_id, :at_time
 
-  belongs_to :statuses
+  belongs_to :status
   belongs_to :user
 
   def self.leave(user_id, status_id, at_time)

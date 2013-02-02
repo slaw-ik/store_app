@@ -1,5 +1,7 @@
 StoreApp::Application.routes.draw do
 
+  resources :activities
+
   devise_for :users, :controllers => { :sessions => "sessions" }
   root :to => "home#index"
 

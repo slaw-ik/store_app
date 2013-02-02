@@ -1,0 +1,7 @@
+%h1 My Activity
+
+- @activities.each do |activity|
+  %p
+    = activity.status.name
+    |
+    = activity.at_time
