@@ -7,7 +7,7 @@ gem 'rails', '3.2.11'
 
 gem 'thin'
 gem "twitter-bootstrap-rails"
-
+gem 'squeel'
 gem "heroku"
 
 # Gems used only for assets and not required

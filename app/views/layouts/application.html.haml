@@ -7,6 +7,8 @@
     %meta{:content => "", :name => "description"}
     %meta{:content => "", :name => "author"}
     = stylesheet_link_tag "application", :media => "all"
+    = stylesheet_link_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/themes/base/jquery-ui.css"
+
     = javascript_include_tag "application"
     = csrf_meta_tags
     = yield(:head)
@@ -36,6 +38,6 @@
                   %a{ :href => "#{activities_path}"}
                     %i{ :class => "icon-chevron-right"}
                     My Activity
-            .span9
+            .span9.work-area
               = yield
           %footer
