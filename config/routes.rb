@@ -1,9 +1,15 @@
 StoreApp::Application.routes.draw do
 
+  resources  :store_activities
+
+  resources :items
+  post "/destroy_item" => "items#destroy_item"
+
+
   resources :activities
 
   devise_for :users, :controllers => { :sessions => "sessions" }
-  root :to => "home#index"
+  root :to => "items#index"
 
   get "/my_activities" => "activities#my_activities"
 

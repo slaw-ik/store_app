@@ -10,6 +10,7 @@ class User < ActiveRecord::Base
   # attr_accessible :title, :body
 
   has_many :activities
+  has_many :store_activities
 
 
   Warden::Manager.before_logout do |user, auth, opts|

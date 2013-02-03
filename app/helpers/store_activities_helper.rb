@@ -1,0 +1,2 @@
+module StoreActivitiesHelper
+end

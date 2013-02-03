@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  description: MyString
+  count: 1
+  crit_count: 1
+  item_type: 1
+
+two:
+  name: MyString
+  description: MyString
+  count: 1
+  crit_count: 1
+  item_type: 1

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user_id: 1
+  item_id: 1
+  count: 1
+  critical: false
+  remainder: 1
+  move_date: 2013-02-03
+
+two:
+  user_id: 1
+  item_id: 1
+  count: 1
+  critical: false
+  remainder: 1
+  move_date: 2013-02-03
