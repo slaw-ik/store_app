@@ -4,8 +4,4 @@ class SessionsController < Devise::SessionsController
     new_user_session_path
   end
 
-  def destroy
-
-    super
-  end
 end
