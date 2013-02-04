@@ -16,7 +16,12 @@ class StoreActivity < ActiveRecord::Base
                   when :create
                     6
                   when :edit
-                    critical = (item.count < item.crit_count ? true : false)
+                    if item.count < item.crit_count
+                      critical = true
+                      AlertMailer.critical_count(user, item).deliver
+                    else
+                      critical = false
+                    end
                     if item.count > first_count
                       count = item.count - first_count
                       7

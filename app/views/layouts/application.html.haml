@@ -3,7 +3,7 @@
   %head
     %meta{:charset => "utf-8"}
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1, maximum-scale=1"}
-    %title= content_for?(:title) ? yield(:title) : "Myapp"
+    %title= content_for?(:title) ? yield(:title) : "Demoapp"
     %meta{:content => "", :name => "description"}
     %meta{:content => "", :name => "author"}
     = stylesheet_link_tag "application", :media => "all"
@@ -31,7 +31,7 @@
                     %i{ :class => "icon-chevron-right"}
                     Store
                 %li{:class => "#{'active' if controller_name == 'store_activities'}"}
-                  %a{ :href => "#"}
+                  %a{ :href => "#{store_activities_path}"}
                     %i{ :class => "icon-chevron-right"}
                     Store Activity
                 %li{:class => "#{'active' if controller_name == 'activities'}"}
