@@ -323,13 +323,13 @@
   this_content_width = content_width
   one = this_content_width/13
 
-  email_w = one
-  it_name_w = one * 2
+  email_w = one*2
+  it_name_w = one * 3 - 20
   stat_name_w = one *2
-  count_w = one * 2
-  crit_w = one * 2
+  count_w = one * 1
+  crit_w = one * 1
   rem_w = one * 2
-  date_w = one * 2
+  date_w = one * 2 - 30
 
   jQuery(params.list_selector).jqGrid(
     shrinkToFit: false

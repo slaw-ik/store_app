@@ -283,8 +283,15 @@ module CommonMethods
 
     page = (params[:page].to_i == 0) ? 1 : params[:page].to_i
     limit = (params[:rows].to_i == 0) ? 50 : params[:rows].to_i
-    sidx = params[:sidx]
-    sord = params[:sord].try(:upcase) || "DESC"
+    sidx2 = ""
+
+    unless params[:sidx].blank?
+      sidx = params[:sidx].split(",")[0]
+      unless params[:sidx].split(",")[1].blank?
+        sidx << " , "+params[:sidx].split(",")[1] +" "+ params[:sord].try(:upcase)
+
+      end
+    end
 
     sidx = "move_date" if sidx.blank?
 

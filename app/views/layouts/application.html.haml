@@ -30,10 +30,10 @@
                   %a{ :href => "#{root_path}"}
                     %i{ :class => "icon-chevron-right"}
                     Store
-                %li
+                %li{:class => "#{'active' if controller_name == 'store_activities'}"}
                   %a{ :href => "#"}
                     %i{ :class => "icon-chevron-right"}
-                    Overview
+                    Store Activity
                 %li{:class => "#{'active' if controller_name == 'activities'}"}
                   %a{ :href => "#{activities_path}"}
                     %i{ :class => "icon-chevron-right"}
